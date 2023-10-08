@@ -1,0 +1,52 @@
+body{
+  margin: 2%;
+  line-height: 2;
+}
+
+nav {
+  display: flex;  
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0.5%;
+  background-color: var(--colour4);
+  height: 5vh;
+  font-size: 20;
+  text-decoration: none;
+
+        /* Flexbox for nav, although this might be redundant if all children are block elements */
+}
+h1{
+  font-size:5vh;
+}
+nav ul {
+  list-style: none;
+  margin: 0;             /* Remove default margin */
+  padding: 1vh;            /* Remove default padding */
+  display: flex;         /* Flexbox for ul to list items in a row */
+  gap: 5vh;  
+  text-decoration: none;
+  text-transform: uppercase ; 
+  
+  
+ 
+}
+nav a:hover {
+  color: var(--colour1);
+  
+}
+nav li{
+  border-style: solid;
+  border-color:var(--colour2);   
+margin: 0.1vh;
+  padding: 1vh;
+  margin-left: 70px;
+}
+
+:root{
+
+--colour1: #ffffff;
+--colour2: #2A3527;
+--colour3: #E5CF87;
+--colour4:#4682B4;
+
+}
