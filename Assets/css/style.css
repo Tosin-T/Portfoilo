@@ -1,22 +1,29 @@
-body{
-  margin: 2%;
-  line-height: 2;
+*{
+  box-sizing:border-box;
 }
-
+body{
+  margin: 0vw;
+  line-height: 2;
+  background-color: var(--colour3);
+}
+header{
+  background-color:var(--colour4);
+  /* height: ; */
+  height: 80px;
+}
 nav {
   display: flex;  
   justify-content: space-between; 
   align-items: center;
-  padding: 0.5%;
-  background-color: var(--colour4);
-  height: 5vh;
-  font-size: 20;
-  text-decoration: none;
+  padding:0.7%;
+  height:5vh;
+  font-size: 4vh;
 
         /* Flexbox for nav, although this might be redundant if all children are block elements */
 }
 h1{
-  font-size:5vh;
+  font-size:6vh;
+  text-transform: uppercase;
 }
 nav ul {
   list-style: none;
@@ -26,22 +33,26 @@ nav ul {
   gap: 5vh;  
   text-decoration: none;
   text-transform: uppercase ; 
-  
-  
- 
 }
 nav a:hover {
   color: var(--colour1);
   
 }
 nav li{
+  position: relative;
   border-style: solid;
-  border-color:var(--colour2);   
-margin: 0.1vh;
-  padding: 1vh;
+  border-color:var(--colour1);   
+  margin: 0vh;
+  padding: 0vh;
   margin-left: 70px;
 }
-
+.column-sub{
+  display: grid;
+  grid-template-rows:30%,20%,25%,25%;
+}
+#about{
+object-fit: contain;
+}
 :root{
 
 --colour1: #ffffff;
