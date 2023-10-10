@@ -1,30 +1,77 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+*{
+	margin: 0px;
+	padding: 0;
+	border: 90px;
+  vertical-align: baseline;
+	font-size: 100%;
+	font-family: 'Dela Gothic One', cursive;
+  font-weight: bold;
+  color: var(--colour2);
+  
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
 *{
   box-sizing:border-box;
 }
 body{
   margin: 0vw;
   line-height: 2;
-  background-color: var(--colour3);
+  background-color: var(--colour5);
 }
 header{
-  background-color:var(--colour4);
+  /* background-color:var(--colour4); */
+  padding-right: 2%;
   /* height: ; */
-  height: 80px;
+  height: 10vh;
+  border-bottom: 2px solid black;
 }
 nav {
   display: flex;  
   justify-content: space-between; 
   align-items: center;
-  padding:0.7%;
   height:5vh;
-  font-size: 4vh;
+  font-size: 1.75vw;
+  width: 100%;
+  height: 100%;
+  
 
         /* Flexbox for nav, although this might be redundant if all children are block elements */
 }
-h1{
-  font-size:6vh;
-  text-transform: uppercase;
+.logo{
+  font-size: 2vw;
+    text-transform: uppercase;
+    padding-left: 0.75vw;
+    padding-right: 0.75vw;
+    border-right: 2px solid rgb(0, 0, 0);
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: azure;
 }
+
+.logo h5 {
+  font-size: 1.15vw;
+  color: #000000;
+}
+
 nav ul {
   list-style: none;
   margin: 0;             /* Remove default margin */
@@ -32,32 +79,219 @@ nav ul {
   display: flex;         /* Flexbox for ul to list items in a row */
   gap: 5vh;  
   text-decoration: none;
-  text-transform: uppercase ; 
+  text-transform: uppercase; 
 }
+
+.nav-item {
+  text-decoration: none;
+  font-size: 2vw;
+}
+
+.project-style {
+  text-decoration: none;
+  color: black;
+}
+
 nav a:hover {
   color: var(--colour1);
   
 }
+
+#about{
+  display: flex;
+}
 nav li{
   position: relative;
-  border-style: solid;
-  border-color:var(--colour1);   
+  /* border-style: solid; */
+  /* border-color:var(--colour1);    */
   margin: 0vh;
   padding: 0vh;
   margin-left: 70px;
 }
+.column-sub-top {
+  display: grid;
+  grid-template-rows:10%,20%,20%,20%;
+  height: 90vh;
+  border-bottom: 2px solid black;
+}
 .column-sub{
   display: grid;
-  grid-template-rows:30%,20%,25%,25%;
+  grid-template-rows:40%,20%,25%,25%;
+  height: 100vh;
+  border-bottom: 2px solid black;
 }
+.column-sub-bottom {
+  display: grid;
+  grid-template-rows:30%,20%,25%,25%;
+  height: 30vh;
+  border-bottom: 2px solid black;
+}
+
+
+.nav-container {
+  display: flex;
+  justify-content: space-between; /* horizontally center (if needed) */
+  align-items: center; /* vertically center */
+  height: 100%;
+}
+
+
+.title-section {
+  /* I am setting a width of the the title section */
+  width: 10.52%;
+  /* This allows me to move the text to the center - in title-section h2, i use margin auto which works due to the display flex */
+  display: flex;
+  text-align: center;
+  /* I am now going to add a black border to the right side  */
+  /* border-top: 2px solid black; */
+  border-right: 2px solid black;
+  /* border-bottom: 2px solid black; */
+  color: var(--colour1);
+}
+.title-section-about-me{
+  width:30%;
+  color: var(--colour1);
+}
+.title-section h2{
+  font-size: 2vw;
+  margin:auto;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+}
+
 #about{
 object-fit: contain;
 }
-:root{
 
---colour1: #ffffff;
---colour2: #2A3527;
---colour3: #E5CF87;
---colour4:#4682B4;
-
+#projects{
+  object-fit: contain;
+  display: flex;
 }
+
+#contact {
+  display: flex;
+}
+ 
+#about .column-2 {
+  width: 35%;
+  height: 90vh;
+}
+
+#portfolio-image {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+.profile {
+  background-color:var(--colour4);
+  margin-top: -12px;
+  padding: 1.75vw;
+  height: 30%;
+  text-align: center;
+ 
+}
+
+.profile h3{
+  font-size: 1.5vw;
+  align-items: center;
+}
+
+.column-3 {
+  display: flex;
+  width: 55%;
+  
+}
+.column-4{
+  text-align: center;
+  align-items: center;
+}
+.column-4 h4{
+font-weight: bolder;
+font-size: 3vh;
+}
+.thank {
+  width: 50%;
+  background-color: red;
+  display: flex;
+  padding: 2vw;
+}
+
+
+.skills {
+  width: 50%;
+  background-color: var(--colour4);
+  display: flex;
+  padding: 2vw;
+}
+
+.thank p {
+  margin: auto;
+  text-align: center;
+  font-size: 1.25vw;
+}
+
+.skills p {
+  margin: auto;
+  text-align: center;
+  font-size: 1.25vw;
+}
+
+
+
+.work-collection {
+  width: 90%;
+  display: flex;
+  margin: auto;
+  /* border: 2px solid black; */
+}
+
+.work-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 16px; /* Spacing between grid items */
+  padding-left: 2vw;
+  padding-right: 2vw;
+  
+}
+
+.grid-item {
+  /* background-color: #e0e0e0; */
+  padding: 20px;
+  font-size: 4vh;
+  text-align: center;
+  border: 2px solid #000000;
+  background-color: var(--colour3);
+}
+
+.grid-item img{
+  display: block;
+  max-height: 70vh;
+  max-width: 60vh;
+  object-fit: scale-down 0.5%;
+  transition: transform .2s;
+  margin: 0 auto;
+  
+}
+.grid-item img:hover{
+  opacity: 0.5;
+  transform: scale(1.1); 
+}
+.grid-item2{
+  padding: 20px;
+  font-size: 4vh;
+  text-align: center; 
+}
+.grid-item2 a{
+  text-decoration: none;
+}
+:root{
+  --colour1: #e63946;
+  --colour2: #f1faee;
+  --colour3: #a8dadc;
+  --colour4:#457b9d;
+  --colour5:#1d3557;
+  
+  }
+  
