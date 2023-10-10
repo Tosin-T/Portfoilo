@@ -83,7 +83,9 @@ nav ul {
   text-decoration: none;
   color: white;
 }
-
+.profile p{
+  color: #000;
+}
 nav a:hover {
   color: var(--colour1);
   
